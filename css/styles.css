@@ -1,0 +1,44 @@
+
+html { 
+  color: white;
+}
+
+h1 {
+	text-align: center;
+}
+*/
+.uk-navbar-brand {
+  border-radius: 50%;
+  line-height: 70px;
+  text-align: center;
+  background-color: #6d6d6d;
+  color: white;
+  font-size: 2em;
+}
+
+
+/*
+.uk-navbar {
+	background: #000;
+	opacity: 0.5;
+}
+
+.uk-navbar-nav li a {
+	color: white;
+}
+*/
+
+/*
+#us{
+	max-width: 100%;
+}
+*/
+
+.page1, .page2, .page3 {
+  background: url(../img/Us.jpg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}

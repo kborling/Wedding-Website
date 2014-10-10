@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.css" />
+
+    <link rel="stylesheet" href="css/onepage-scroll.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!-- Load Scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="js/uikit.min.js"></script>
+
+	<script type="text/javascript" src="js/onepage-scroll.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+	<title>Megan &amp; Kevin</title>
+	<!--
+		<nav class="uk-navbar-center">
+			<ul class="uk-navbar-nav">
+				<li><a href="#">Our Story</a></li>
+				<li><a href="#">Wedding Party</a></li>
+				<li><a href="#">RSVP</a></li>
+				<li><a href="#" class="uk-navbar-brand">Kevin &amp; Megan</a></li>
+				<li><a href="#">General Information</a></li>
+				<li><a href="#">Registry</a></li>
+				<li><a href="#">Hotels &amp; Accomodations</a></li>
+			</ul>
+		</nav>
+		-->
+</head>
+
+<body>
+	<ul class="onepage-pagination">
+		<li><a data-index="1" href="#1" class=""></a></li>
+		<li><a data-index="2" href="#2" class=""></a></li>
+		<li><a data-index="3" href="#3" class=""></a></li>
+	</ul>
+	<!--<img src="img/Us.jpg" alt="Kevin &amp; Megan" id="us">-->
+	<div class="main onepage-wrapper">
+		<section class="page1 section active" data-index="1">
+			<div class="page_container">
+				<h1>Welcome Page</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
+			</div>
+		</section>
+		<section class="page2 section" data-index="2">
+			<div class="page_container">
+				<h1>CountDown</h1>
+				<script type="application/javascript">
+					var myCountdownTest = new Countdown({
+								 	year	: 2015,
+									month	: 6, 
+									day		: 27,
+									width	: 400, 
+									height	: 50,
+									});
+				</script>
+				<p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
+			</div>
+		</section>
+		<section class="page3 section" data-index="3">
+			<div class="page_container">
+				<h1>Test Title3</h1>
+				
+				<p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
+			</div>
+		</section>
+	</div>
+	<footer>
+	</footer>
+
+</body>
+
+</html>
