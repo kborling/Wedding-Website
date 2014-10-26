@@ -4,19 +4,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<link rel="stylesheet" href="css/uikit.min.css" />
-    <link rel="stylesheet" href="css/uikit.css" />
-
-    <link rel="stylesheet" href="css/onepage-scroll.css" />
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/uikit.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
 	<!-- Load Scripts -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-
     <script type="text/javascript" src="js/uikit.min.js"></script>
-
-	<script type="text/javascript" src="js/onepage-scroll.js"></script>
-	<script type="text/javascript" src="js/countdown.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 
     <link rel="icon" type="image/png" href="./img/favicon.ico">
@@ -37,42 +35,54 @@
 </head>
 
 <body>
-	<ul class="onepage-pagination">
-		<li><a data-index="1" href="#1" class=""></a></li>
-		<li><a data-index="2" href="#2" class=""></a></li>
-		<li><a data-index="3" href="#3" class=""></a></li>
-	</ul>
-	<!--<img src="img/Us.jpg" alt="Kevin &amp; Megan" id="us">-->
-	<div class="main onepage-wrapper">
-		<section class="page1 section active" data-index="1">
-			<div class="page_container">
-				<h1>Welcome Page</h1>
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Our Story</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Wedding Party</a></li>
+	<li data-menuanchor="thirdPage"><a href="#thirdPage">RSVP</a></li>
+	<li data-menuanchor="fourthPage"><a href="#fourthPage">Registry</a></li>
+	<li data-menuanchor="fifthPage"><a href="#fifthPage">General Information</a></li>
+	<li data-menuanchor="sixthPage"><a href="#sixthPage">Hotels &amp; Accomodations</a></li>
+</ul>
+	<div id="fullpage">
+		<section class="section active" id="section0">
+			<div class="">
+				<h1>Our Story</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
 			</div>
 		</section>
-		<section class="page2 section" data-index="2">
-			<div class="page_container">
-				<h1>CountDown</h1>
-				<script type="application/javascript">
-					var myCountdownTest = new Countdown({
-								 	year	: 2015,
-									month	: 6, 
-									day		: 27,
-									width	: 400, 
-									height	: 50,
-									});
-				</script>
-				<p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
+		<section class="section" id="section1">
+    <div class="slide" data-anchor="slide1"> Slide 1 </div>
+    <div class="slide" data-anchor="slide2"> Slide 2 </div>
+    <div class="slide" data-anchor="slide3"> Slide 3 </div>
+    <div class="slide" data-anchor="slide4"> Slide 4 </div>
+		</section>
+		<section class="section" id="section2">
+			<div class="">
+				<h1>RSVP</h1>		
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
 			</div>
 		</section>
-		<section class="page3 section" data-index="3">
-			<div class="page_container">
-				<h1>Test Title3</h1>
-				
-				<p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
+		<section class="section" id="section3">
+			<div class="">
+				<h1>Registry</h1>		
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
 			</div>
 		</section>
-	</div>
+		<section class="section" id="section4">
+			<div class="">
+				<h1>General Information</h1>		
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
+			</div>
+		</section>
+		<section class="section" id="section5">
+			<div class="">
+				<h1>Hotels &amp; Accomodations</h1>		
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quo tenetur, amet, et consequatur dicta qui obcaecati sapiente blanditiis in quidem ducimus id odit. Voluptatum sequi in tenetur velit, nesciunt.</p>
+			</div>
+		</section>
+	</div> <!-- End Full Page -->
+
 	<footer>
 	</footer>
 
