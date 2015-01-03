@@ -4,7 +4,7 @@ $(document).ready(function(){
         //Navigation
         menu: '#menu',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
-        navigation: true,
+        navigation: false,
         navigationPosition: 'top',
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -36,4 +36,7 @@ $(document).ready(function(){
         slideSelector: '.slide'
 
     });
+    // Google Map
+    $('#googleMap').ClassyMap();
+
 });

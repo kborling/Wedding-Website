@@ -1,121 +1,153 @@
-body{
+body {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   color: #333;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .title {
-  font-size: 6.0rem;
+  font-size: 6rem;
   margin-top: -20%;
 }
 
 #section0 {
-  background: url(../img/Us.jpg) no-repeat; 
+  background: url(../img/Us.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.wrap{
+.wrap {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   position: relative;
 }
-h1{
-  font-size: 3em; 
-}
-p, h2{
-  font-size: 2em;
-}
-h2{
-  color:inherit;
-}
-.section{
-  text-align:center;
+
+h1 {
+  font-size: 3em;
 }
 
+p {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  color: inherit;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.reset, #girls ul, #guys ul, #googleMap ul, #info ul {
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+}
 
 /* Menu Styling */
-#menu li {
-  display:inline-block;
-  margin: 10px;
-  color: #000;
-  background:#fff;
-  background: rgba(255,255,255, 0.5);
-  -webkit-border-radius: 10px; 
-            border-radius: 10px; 
-}
-#menu li.active{
-  background:#666;
-  background: rgba(0,0,0, 0.5);
-  color: #fff;
-}
-#menu li a{
-  text-decoration:none;
-  color: #000;
-}
-#menu li.active a:hover{
-  color: #000;
-}
-#menu li:hover{
-  background: rgba(255,255,255, 0.8);
-}
-#menu li a,
-#menu li.active a{
-  padding: 9px 18px;
-  display:block;
-}
-#menu li.active a{
-  color: #fff;
-}
-#menu{
-  position:fixed;
-  top:0;
-  left:0;
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 40px;
   z-index: 70;
   width: 100%;
   padding: 0;
-  margin:0;
+  margin: 0;
   background-color: white;
   padding: 0 0 15px 0;
 }
-/* End Menu Styling */
-
-
-#section0 img,
-#section1 img{
-  margin: 20px 0 0 0;
-} 
-#section2 img{
-  margin: 20px 0 0 52px;  
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
-#section3 img{
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+#menu li.active a:hover {
+  color: #000;
+}
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#menu li a {
+  padding: 9px 18px;
+  display: block;
+}
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+  color: #fff;
+}
+
+/* End Menu Styling */
+/* Section Styling */
+#section0 img, #section1 img {
+  margin: 20px 0 0 0;
+}
+
+#section1 {
+  font-size: 1em;
+}
+#section1 ul li {
+  display: inline;
+}
+
+#section2 img {
+  margin: 20px 0 0 52px;
+}
+
+#section3 img {
   bottom: 0px;
-  position:absolute;
+  position: absolute;
   margin-left: -420px;
 }
-.intro p{
+
+.intro p {
   width: 50%;
   margin: 0 auto;
   font-size: 1.5em;
 }
-#fullPage-nav{
+
+#fullPage-nav {
   position: absolute;
   z-index: 100;
   margin-top: -32px;
   top: 50%;
   opacity: 1;
 }
-#fullPage-nav li{
+#fullPage-nav li {
   display: block;
   width: 14px;
   height: 13px;
   margin: 7px;
 }
-#fullPage-nav li a{
+#fullPage-nav li a {
   display: block;
   position: relative;
   z-index: 1;
@@ -124,19 +156,131 @@ h2{
   cursor: pointer;
   text-decoration: none;
 }
-#fullPage-nav li .active span{
+#fullPage-nav li .active span {
   background: #333;
 }
-#fullPage-nav span{
+#fullPage-nav span {
   top: 2px;
   left: 2px;
   width: 8px;
   height: 8px;
   border: 1px solid #000;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
 }
+
+/* End Section Styling */
+/* Wedding Party Styling */
+#girls, #guys, #googleMap, #info {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+#girls h2, #guys h2, #googleMap h2, #info h2 {
+  text-decoration: underline;
+}
+
+#girls {
+  background: #474350;
+}
+#girls .circle {
+  background: url("../img/girl.png") no-repeat center;
+  float: left;
+  margin-right: 1%;
+}
+#girls h3 {
+  text-align: left;
+}
+
+#guys {
+  background: #B2B2B2;
+}
+#guys .circle {
+  background: url("../img/guy.png") no-repeat center;
+  float: right;
+  margin-left: 1%;
+}
+#guys h3 {
+  text-align: right;
+}
+
+.person {
+  display: inline-block;
+  clear: both;
+  float: left;
+  padding: 1%;
+}
+.person h3, .person p {
+  display: block;
+}
+.person p {
+  text-align: justify;
+}
+
+.circle {
+  background: #fff;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+/* End Wedding Party Styling */
+/* RSVP Styling */
+form > * {
+  vertical-align: middle;
+}
+
+button {
+  border: 0;
+  border-radius: 7px;
+  padding: 0 17px;
+  background: #EC6658;
+  width: 99px;
+  border-bottom: 5px solid #B85045;
+  color: #fff;
+  height: 65px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+button:active {
+  border-bottom: 0px solid #B85045;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.field {
+  border: 0;
+  border-radius: 7px;
+  padding: 0 17px;
+  max-width: 404px;
+  width: 40%;
+  border-bottom: 5px solid #bdc3c7;
+  height: 60px;
+  color: #7f8c8d;
+  font-size: 19px;
+}
+
+.field:focus {
+  outline-color: rgba(255, 255, 255, 0);
+}
+
+form #guests {
+  height: 64px;
+  max-width: 184px;
+}
+form select {
+  display: none;
+}
+
+/* End RSVP Styling */
+
+/*# sourceMappingURL=styles.css.map */
