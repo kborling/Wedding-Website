@@ -118,16 +118,6 @@ ul {
   display: inline;
 }
 
-#section2 img {
-  margin: 20px 0 0 52px;
-}
-
-#section3 img {
-  bottom: 0px;
-  position: absolute;
-  margin-left: -420px;
-}
-
 .intro p {
   width: 50%;
   margin: 0 auto;
@@ -186,6 +176,7 @@ ul {
 
 #girls {
   background: #474350;
+  color: #B2B2B2;
 }
 #girls .circle {
   background: url("../img/girl.png") no-repeat center;
@@ -198,6 +189,7 @@ ul {
 
 #guys {
   background: #B2B2B2;
+  color: #474350;
 }
 #guys .circle {
   background: url("../img/guy.png") no-repeat center;
@@ -219,6 +211,7 @@ ul {
 }
 .person p {
   text-align: justify;
+  margin: auto 5%;
 }
 
 .circle {
@@ -282,5 +275,12 @@ form select {
 }
 
 /* End RSVP Styling */
+/* Registry Styling */
+#shop li {
+  display: inline;
+  padding: 0 1%;
+}
+
+/* End Registry Styling */
 
 /*# sourceMappingURL=styles.css.map */

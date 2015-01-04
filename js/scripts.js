@@ -25,7 +25,7 @@ $(document).ready(function(){
          //Design
         verticalCentered: true,
         resize : true,
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#1bbc9b'],
+        sectionsColor: ['#1bbc9b', '#4D4D4D', '#7BAABE', 'whitesmoke', '#ccddff', '#1bbc9b'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',

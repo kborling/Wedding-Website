@@ -1,3 +1,10 @@
+$purple: #474350
+$silver: #B2B2B2
+$gold: #6d6d6d
+$white: #fff
+$black: #000
+
+
 body
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif
   color: #333
@@ -98,14 +105,6 @@ ul
     li
       display: inline
 
-#section2 img
-  margin: 20px 0 0 52px
-
-#section3 img
-  bottom: 0px
-  position: absolute
-  margin-left: -420px
-
 .intro p
   width: 50%
   margin: 0 auto
@@ -159,7 +158,8 @@ ul
     text-decoration: underline
 
 #girls
-  background: #474350
+  background: $purple
+  color: $silver
   .circle
     background: url('../img/girl.png') no-repeat center
     float: left
@@ -167,7 +167,9 @@ ul
   h3
     text-align: left
 #guys
-  background: #B2B2B2
+  background: $silver
+  color: $purple
+
   .circle
     background: url('../img/guy.png') no-repeat center
     float: right
@@ -186,6 +188,7 @@ ul
 
   p
     text-align: justify
+    margin: auto 5%
 
 .circle
   background: #fff
@@ -246,3 +249,10 @@ form
 
 
 /* End RSVP Styling */
+
+/* Registry Styling */
+#shop
+  li
+    display: inline
+    padding: 0 1%
+/* End Registry Styling */
