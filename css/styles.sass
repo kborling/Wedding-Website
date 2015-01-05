@@ -1,16 +1,17 @@
-$purple: #474350
-$silver: #B2B2B2
-$gold: #6d6d6d
+$purple: #AA93C0
+$silver: #CECDCF
+$gold: #D3CD8B
 $white: #fff
 $black: #000
-
+$nav: #B2B2B2
 
 body
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif
+  font-weight: 300
   color: #333
   color: rgba(0, 0, 0, 0.5)
 
-.title
+#title
   font-size: 6.0rem
   margin-top: -20%
 
@@ -21,24 +22,17 @@ body
   -o-background-size: cover
   background-size: cover
 
-.wrap
-  margin-left: auto
-  margin-right: auto
-  width: 960px
-  position: relative
-
+h1, h2, h3
+  color: inherit
+  font-weight: 600
 h1
   font-size: 3em
-
-p
-  font-size: 1em
-
 h2
   font-size: 2em
-  color: inherit
 h3
   font-size: 1.5em
-
+p
+  font-size: 1em
 ul
   list-style: none
 
@@ -54,44 +48,58 @@ ul
 
 /* Menu Styling */
 
+#logo
+  @extend .reset
+  color: $purple
+
+#logocircle
+  background: #fff
+  border-radius: 50%
+  -moz-border-radius: 50%
+  -webkit-border-radius: 50%
+  height: 200px
+  width: 200px
+  margin-top: -30%
+
 #menu
   li
     display: inline-block
-    margin: 10px
-    color: #000
-    background: #fff
-    background: rgba(255, 255, 255, 0.5)
-    -webkit-border-radius: 10px
-    border-radius: 10px
-    &.active
-      background: #666
-      background: rgba(0, 0, 0, 0.5)
-      color: #fff
+    margin-top: 5px
+    color: $black
+    font-size: 1.6em
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+
     a
-      text-decoration: none
-      color: #000
-    &.active a:hover
-      color: #000
-    &:hover
-      background: rgba(255, 255, 255, 0.8)
-    a
-      padding: 9px 18px
+      color: $black
       display: block
+      padding: 9px 18px
+      text-decoration: none
+
+    &.active
+      color: $white
+
+    &.active a:hover
+      color: $black
+
+    //&:hover
     &.active a
       padding: 9px 18px
       display: block
-      color: #fff
-  position: fixed
-  top: 0
-  left: 0
-  height: 40px
-  z-index: 70
-  width: 100%
-  padding: 0
-  margin: 0
-  background-color: white
-  padding: 0 0 15px 0
+      color: $white
 
+  background-color: $nav
+  -webkit-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.75)
+  -moz-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.75)
+  box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.75)
+  height: 5%
+  margin: 0
+  padding: 0 0 15px 0
+  position: fixed
+  left: 0
+  top: 0
+  text-align: center
+  width: 100%
+  z-index: 1
 /* End Menu Styling */
 
 /* Section Styling */
@@ -156,10 +164,11 @@ ul
     @extend .reset
   h2
     text-decoration: underline
-
+#girls, #guys
+  margin-top: 14px
 #girls
   background: $purple
-  color: $silver
+  //color: $silver
   .circle
     background: url('../img/girl.png') no-repeat center
     float: left
@@ -167,8 +176,8 @@ ul
   h3
     text-align: left
 #guys
-  background: $silver
-  color: $purple
+  background: $gold
+  //color: $purple
 
   .circle
     background: url('../img/guy.png') no-repeat center

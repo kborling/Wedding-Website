@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $('#fullpage').fullpage({
 
         //Navigation
@@ -25,10 +26,10 @@ $(document).ready(function(){
          //Design
         verticalCentered: true,
         resize : true,
-        sectionsColor: ['#1bbc9b', '#4D4D4D', '#7BAABE', 'whitesmoke', '#ccddff', '#1bbc9b'],
+        sectionsColor: ['#1bbc9b', '#4D4D4D', '#7BAABE', 'whitesmoke', '#DDD494', '#1bbc9b'],
         paddingTop: '3em',
         paddingBottom: '10px',
-        fixedElements: '#header, .footer',
+        fixedElements: '#header, #footer',
         responsive: 0,
 
         //Custom selectors
@@ -39,4 +40,4 @@ $(document).ready(function(){
     // Google Map
     $('#googleMap').ClassyMap();
 
-});
+}); // End ready
