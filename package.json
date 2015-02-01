@@ -1,0 +1,14 @@
+{
+"name": "Wedding Website",
+"version": "0.1.0",
+"devDependencies": {
+"grunt": "~0.4.5",
+"grunt-contrib-jshint": "~0.10.0",
+"grunt-contrib-nodeunit": "~0.4.1",
+"grunt-contrib-sass": "^0.8.1",
+"grunt-contrib-uglify": "~0.5.0",
+"grunt-contrib-watch": "^0.6.1",
+"jasmine": "^2.1.1",
+"qunit": "^0.7.5"
+}
+}

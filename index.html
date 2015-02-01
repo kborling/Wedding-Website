@@ -8,20 +8,42 @@
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.min.css" />
     <link rel="icon" type="image/png" href="./img/favicon.ico">
+
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
 	<title>Kevin &amp; Megan</title>
 </head>
 
 <body>
-	<ul id="menu">
-		<li data-menuanchor="firstPage"><a href="#firstPage">Welcome</a></li>
-		<li data-menuanchor="secondPage"><a href="#secondPage">Wedding Party</a></li>
-		<li data-menuanchor="thirdPage"><a href="#thirdPage">RSVP</a></li>
-		<li data-menuanchor="fourthPage"><a href="#fourthPage">Registry</a></li>
-		<li data-menuanchor="fifthPage"><a href="#fifthPage">General Information</a></li>
-		<li data-menuanchor="sixthPage"><a href="#sixthPage">Hotels &amp; Accomodations</a></li>
-	</ul>
+	<div class="mobile-menu">
+	    <ul>
+			<li data-menuanchor="firstPage"><a href="#firstPage">Welcome</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">Wedding Party</a></li>
+			<li data-menuanchor="thirdPage"><a href="#thirdPage">RSVP</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">Registry</a></li>
+			<li data-menuanchor="fifthPage"><a href="#fifthPage">General Information</a></li>
+			<li data-menuanchor="sixthPage"><a href="#sixthPage">Hotels &amp; Accomodations</a></li>
+	    </ul>
+	</div>
+	<nav role='navigation'>
+		<ul id="menu">
+			<li data-menuanchor="firstPage"><a href="#firstPage">Welcome</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">Wedding Party</a></li>
+			<li data-menuanchor="thirdPage"><a href="#thirdPage">RSVP</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">Registry</a></li>
+			<li data-menuanchor="fifthPage"><a href="#fifthPage">General Information</a></li>
+			<li data-menuanchor="sixthPage"><a href="#sixthPage">Hotels &amp; Accomodations</a></li>
+		</ul>
+	    <div class="menu">
+	        <a class="menu__icon" href="#" title="Menu">
+	          <span class="line line-1"></span>
+	          <span class="line line-2"></span>
+	          <span class="line line-3"></span>
+	        </a>     
+	    </div>
+	</nav>
 	<div id="fullpage">
 		<section class="section active" id="section0">
 			<ul id="scene" class="scene">
@@ -96,13 +118,15 @@
 					<h1>When and Where</h1>
 				</header>
 				<article>
-					<aside id="googleMap"
-						data-description="Stan Hywet Halls &amp; Garden"
-						data-color="purple"
-					    data-zoom="15" 
-					    data-address="714 North Portage Path, Akron, OH 44303" 
-					    data-width="700" 
-					    data-height="500">
+					<aside>
+						<div class="shadow holder" id="googleMap"
+							data-description="Stan Hywet Halls &amp; Garden"
+							data-color="purple"
+						    data-zoom="15" 
+						    data-address="714 North Portage Path, Akron, OH 44303" 
+						    data-width="100%" 
+						    data-height="200">
+					    </div>
 					</aside>
 					<aside id="info">
 						<h2>Stan Hywet Halls &amp; Garden</h2>
