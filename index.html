@@ -3,6 +3,9 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -21,9 +24,19 @@
 	</ul>
 	<div id="fullpage">
 		<section class="section active" id="section0">
-			<header>
-				<h1 id="title">Kevin &amp; Megan</h1>
-			</header>
+			<ul id="scene" class="scene">
+				<!--<li class="layer" data-depth="0.00"><img id="bg" src="img/bg1.png" alt=""></li>-->
+				<li class="layer" data-depth="0.12"><div id="holder"></div></li>
+				<li class="layer" data-depth="0.12"><div id="bg">&nbsp;</div></li>
+				<li class="layer" data-depth="0.20"><img id="us" src="img/Us0.png" alt=""></li>
+				<li class="layer" data-depth="0.14">
+					<header class="heading">
+						<h1 id="title">Kevin &amp; Megan</h1>
+						<h2>June 27th, 2015</h2>
+						<h2>Stan Hywet</h2>
+					</header>
+				</li>
+			</ul>
 		</section>
 		<section class="section" id="section1">
 			<div id="girls">
@@ -98,7 +111,7 @@
 							<li><span class="bold">Time:</span> 4:00PM</li>
 							<li><span class="bold">Location:</span> Tea Houses</li>
 							<li><h3>Cocktail Hour/Reception</h3></li>
-							<li><span class="bold">Time:</span> Following after the Ceremony</li>
+							<li><span class="bold">Time:</span> Following the Ceremony</li>
 							<li><span class="bold">Location:</span> Manor House Auditorium</li>
 						</ul>
 					</aside>
@@ -124,6 +137,7 @@
 	<script type="text/javascript" src="js/vendors/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax.min.js"></script>
 	<script type="text/javascript" src="js/jquery.classymap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 

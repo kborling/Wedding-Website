@@ -26,7 +26,7 @@ $(document).ready(function(){
          //Design
         verticalCentered: true,
         resize : true,
-        sectionsColor: ['#1bbc9b', '#4D4D4D', '#7BAABE', 'whitesmoke', '#DDD494', '#1bbc9b'],
+        sectionsColor: ['whitesmoke', '#4D4D4D', '#7BAABE', 'whitesmoke', '#DDD494', '#1bbc9b'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, #footer',
@@ -39,5 +39,8 @@ $(document).ready(function(){
     });
     // Google Map
     $('#googleMap').ClassyMap();
+
+    // Parallax
+    $('#scene').parallax();
 
 }); // End ready

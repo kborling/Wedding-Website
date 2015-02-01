@@ -5,22 +5,19 @@ $white: #fff
 $black: #000
 $nav: #B2B2B2
 
+@font-face
+  font-family: 'titleFont'
+  src: url('../fonts/AlexBrush-Regular.ttf') format('truetype')
+
+@font-face
+  font-family: 'titFont'
+  src: url('../fonts/GreatVibes-Regular.otf') format('opentype')
+
 body
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif
+  font-family: 'titleFont', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif
   font-weight: 300
   color: #333
   color: rgba(0, 0, 0, 0.5)
-
-#title
-  font-size: 6.0rem
-  margin-top: -20%
-
-#section0
-  background: url(../img/Us.jpg) no-repeat
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
 
 h1, h2, h3
   color: inherit
@@ -43,8 +40,55 @@ ul
   padding: 0
   margin: 0
 
-.section
-  text-align: center
+.heading
+  color: #FFB800
+  margin: 0
+  margin-top: -6.6em
+  position: absolute
+  width: 100%
+  left: -32%
+
+  #title
+    font-family: 'titFont'
+    font-size: 6.0rem
+  h2
+    font-size: 4.0rem
+
+#section0
+  > div
+    display: block
+    vertical-align: baseline
+
+  .scene
+    margin-top: 4.2%
+    text-align: center
+
+    .layer
+      display: block
+      height: 100%
+      position: absolute
+      width: 100%
+
+    #holder
+      position: relative
+      display: block
+      left: 0
+      top: 0
+    #bg
+      background: url(../img/bg.png) no-repeat 100% 100%
+      -webkit-background-size: cover
+      -moz-background-size: cover
+      -o-background-size: cover
+      background-size: cover
+      margin-top: -30.0em
+      position: absolute
+      left: -5%
+      height: 1387px
+      width: 2080px
+    #us
+      margin-top: 2.5em
+      position: absolute
+      left: 40%
 
 /* Menu Styling */
 
@@ -78,8 +122,8 @@ ul
     &.active
       color: $white
 
-    &.active a:hover
-      color: $black
+    a:hover
+      color: $white
 
     //&:hover
     &.active a
@@ -103,9 +147,8 @@ ul
 /* End Menu Styling */
 
 /* Section Styling */
-
-#section0 img, #section1 img
-  margin: 20px 0 0 0
+.section
+  text-align: center
 
 #section1
   font-size: 1em
